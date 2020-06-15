@@ -18,7 +18,7 @@ pipeline {
             
             sh 'npm i -D jest-junit'
             sh 'npm i -D jest-sonar-reporter'
-            sh 'npm test -- --ci --testResultsProcessor=jest-sonar-reporter --reporters=jest-junit --reporters=default --coverage --coverageReporters=cobertura --coverageReporters=lcov --coverageReporters=html --watchAll=flase'
+            sh 'npm test -- --coverage --watchAll=flase'
           }
         }
 
